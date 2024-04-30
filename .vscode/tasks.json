@@ -7,10 +7,9 @@
             "command": "/usr/bin/g++",
             "args": [
                 "-g",
-                "ex1.cpp",
-                "number_guessing_game_imp.cpp",
+                "${fileDirname}/*.cpp",
                 "-o",
-                "ex1"
+                "${fileDirname}/${fileBasenameNoExtension}"
             ],
             "group": "build",
             "problemMatcher": [

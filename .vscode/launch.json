@@ -6,9 +6,12 @@
             "type": "lldb",
             "request": "launch",
             "name": "Debug",
-            "program": "${workspaceFolder}/ex1",
+            // 指定了要调试的可执行程序的路径。
+            // "program": "${workspaceFolder}/base/io/index",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
             "args": [],
-            "cwd": "${workspaceFolder}",
+            // 指定了程序运行时的当前工作目录
+            "cwd": "${fileDirname}",
             // 注意了，这个关联tasks.json
             "preLaunchTask": "build and run"
         }
